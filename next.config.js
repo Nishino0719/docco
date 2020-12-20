@@ -11,5 +11,8 @@ const nextConfig = {
     return config;
   },
 };
+// withOffline を読み込む
+const withOffline = require("next-offline");
 
-module.exports = nextConfig;
+// nextConfig を withOffline に渡す
+module.exports = withOffline(nextConfig);
